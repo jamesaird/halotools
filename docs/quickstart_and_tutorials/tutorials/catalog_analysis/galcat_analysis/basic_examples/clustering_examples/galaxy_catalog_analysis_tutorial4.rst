@@ -99,7 +99,7 @@ Plot the results
 
 .. code:: python
 
-    rp_bin_centers = (rp_bins[:1] + rp_bins[1:])/2.
+    rp_bin_centers = (rp_bins[:-1] + rp_bins[1:])/2.
 
     plt.plot(rp_bin_centers, wp_all,
              label=r'All galaxies',
